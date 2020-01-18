@@ -1,0 +1,23 @@
+body {
+  background-color: #000;
+  box-sizing: border-box;
+  color: #eee;
+  font-family: "Raleway", sans-serif;
+}
+
+#header {
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 101;
+  justify-content: space-between;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: 32px;
+  border-bottom: 0.5px solid #ddd;
+}
