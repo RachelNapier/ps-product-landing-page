@@ -10,7 +10,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  bottom: 0;
+  right: 0;
   background-color: #000;
   display: flex;
   flex-wrap: wrap;
@@ -23,10 +23,25 @@ body {
 }
 
 #header-img {
-  display: block;
-  padding: 16px;
   height: auto;
   width: auto;
   max-width: 245px;
   max-height: 100px;
+}
+
+#nav-bar {
+  align-self: center;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+#header-img, li {
+  padding: 16px;
+  display: inline-block;
 }
