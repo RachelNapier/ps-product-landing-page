@@ -6,7 +6,7 @@ body {
 }
 
 #header {
-  padding: 0 32px;
+  padding: 0px 32px;
   position: sticky;
   top: 0;
   left: 0;
@@ -20,4 +20,13 @@ body {
   margin-right: -16px;
   margin-bottom: 32px;
   border-bottom: 0.5px solid #ddd;
+}
+
+#header-img {
+  display: block;
+  padding: 16px;
+  height: auto;
+  width: auto;
+  max-width: 245px;
+  max-height: 100px;
 }
