@@ -71,3 +71,9 @@ h1,
 h2 {
   font-weight: 200;
 }
+
+#hero {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
