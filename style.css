@@ -41,7 +41,8 @@ body {
   margin: 0;
 }
 
-#header-img, li {
+#header-img,
+li {
   padding: 16px;
   display: inline-block;
 }
@@ -56,4 +57,17 @@ body {
 .nav-link:hover {
   opacity: 1;
   color: #8686c7;
+}
+
+#main {
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.6px;
+}
+
+h1,
+h2 {
+  font-weight: 200;
 }
