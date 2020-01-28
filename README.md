@@ -5,7 +5,6 @@
 * Three additional feature images
 * An embedded, responsive product video
 * Form included at the bottom, for pre-ordering\
-&nbsp;
 ![Screenshot](images/sn-1.png)
 ![Screenshot](images/sn-2.png)
 ![Screenshot](images/sn-3.png)
