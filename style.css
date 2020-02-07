@@ -4,13 +4,38 @@
 body {
   background-color: #000;
   box-sizing: border-box;
-  color: #fefefe;
   font-family: "Trocchi", serif;
+}
+
+li {
+  list-style: none;
+}
+
+#header,
+h1,
+h2 {
+  border-bottom: 0.5px solid #ddd;
+}
+
+
+a,
+h1,
+h2,
+p {
+  color: #fefefe;
+}
+
+.nav-link,
+h1,
+h2 {
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: #ddd;
 }
 
 /* ===================================
             NAVBAR
-     =================================== */
+   =================================== */
 
 #header {
   padding: 0 1em;
@@ -28,11 +53,6 @@ body {
   margin-bottom: 2em;
 }
 
-#header,
-h1,
-h2 {
-  border-bottom: 0.5px solid #ddd;
-}
 
 #header-img {
   display: block;
@@ -59,26 +79,32 @@ form {
   display: inline-block;
 }
 
-.nav-link,
-h1,
-h2 {
-  text-transform: uppercase;
-  opacity: 0.8;
-  color: #ddd;
+.nav-link {
+  font-size: 14px;
 }
 
-.nav-link:hover {
+a:hover {
   color: #3a9bbe;
+  opacity: none;
+  text-decoration: none;
+
+}
+
+a.hover:hover {
+  text-decoration: underline;
+}
+
+a.hover:hover {
+  text-decoration: underline;
 }
 
 /* ===================================
             CONTENT & IMAGES
-     =================================== */
+   =================================== */
 
 #main {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1em;
 }
 
 #main,
@@ -86,37 +112,21 @@ form {
   text-align: center;
 }
 
-.hero {
-  padding-left: 2.5em;
-}
-
-.cover,
-.carousel {
-  margin-left: 1.5em;
-}
-
 h1,
 h2 {
-  padding-top: 2em;
+  padding-top: 5em;
 }
 
 .list_style {
-  padding-top: 1.2em;
-  margin-bottom: -1em;
+  display: block;
   font-size: 1.5em;
-}
-
-.cover,
-.hero,
-#image,
-.carousel {
-  padding-right: 2.5em;
+  margin-bottom: -15px;
+  padding-top: 3em;
 }
 
 .carousel {
   margin-bottom: 10px;
   margin-top: -10px;
-  padding-right: 3em;
 }
 
 .cover,
@@ -130,13 +140,41 @@ form {
   height: 100%;
 }
 
+#features {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.carousel {
+  padding-left: 45px;
+  padding-right: 5px; 
+}
+
+.carousel-control-prev {
+  margin-left: -28px;
+}
+
+.carousel-control-next {
+  margin-right: -70px;
+}
+
+#hardware {
+  padding-left: 150px;
+  padding-right: 115px;
+}
+
 .hardware_image {
   padding-top: 3em;
+  padding-bottom: 100px;
 }
 
 /* ===================================
             PRODUCT VIDEO
-     =================================== */
+   =================================== */
+
+.video-border {
+  border: 5px outset #ddd;
+}
 
 #video-container,
 #video {
@@ -158,45 +196,46 @@ form {
 
 /* ===================================
             FORM STYLES
-     =================================== */
+   =================================== */
 
-#form {
-  margin: 0 -1em;
-  border-top: 0.5px solid #ddd;
-  padding: 2em;
-}
-
-input {
-  background-color: transparent;
-  color: inherit;
-  border: none;
-  margin: 1em 0;
-  width: 50%;
-}
-
-input:not([type="submit"]) {
-  padding: 1em 0;
-  border-bottom: 1px solid currentColor;
-}
-
-input[type="submit"] {
-  background-color: #fefefe;
-  color: #000;
-  padding: 1em 1.5em;
-  transition: all 0.1s ease;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #3a9bbe;
-  color: #fefefe;
-}
+   #form {
+    margin: 0 -1em;
+    border-top: 0.5px solid #ddd;
+    padding: 2em;
+  }
+  
+  input {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    margin: 1em 0;
+    width: 50%;
+  }
+  
+  input:not([type="submit"]) {
+    padding: 1em 0;
+    border-bottom: 1px solid currentColor;
+    color: #ddd;
+    padding-left: 8px;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    background-color: #fefefe;
+    color: #000;
+    padding: 1em 1.5em;
+    transition: all 0.1s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3a9bbe;
+  }
 
 /* ===================================
             MEDIA QUERIES
-     =================================== */
+   =================================== */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 767px) {
   #header,
   input {
     display: block;
