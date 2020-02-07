@@ -17,17 +17,20 @@ h2 {
   border-bottom: 0.5px solid #ddd;
 }
 
+#main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 
-a,
-h1,
-h2,
 p {
   color: #fefefe;
+  padding-top: 1em;
 }
 
 .nav-link,
 h1,
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
   opacity: 0.8;
   color: #ddd;
@@ -52,7 +55,6 @@ h2 {
   margin-right: -1em;
   margin-bottom: 2em;
 }
-
 
 #header-img {
   display: block;
@@ -83,31 +85,20 @@ form {
   font-size: 14px;
 }
 
-a:hover {
+.nav-link:hover {
   color: #3a9bbe;
   opacity: none;
   text-decoration: none;
-
-}
-
-a.hover:hover {
-  text-decoration: underline;
-}
-
-a.hover:hover {
-  text-decoration: underline;
+  border-bottom: 0.5px solid #3a9bbe;
 }
 
 /* ===================================
             CONTENT & IMAGES
    =================================== */
 
-#main {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
 #main,
+h3,
+.centerTitle,
 form {
   text-align: center;
 }
@@ -117,7 +108,12 @@ h2 {
   padding-top: 5em;
 }
 
-.list_style {
+h3 {
+  border-top: 0.5px solid #ddd;
+  padding-top: 1em;
+}
+
+.centerTitle {
   display: block;
   font-size: 1.5em;
   margin-bottom: -15px;
@@ -140,14 +136,17 @@ form {
   height: 100%;
 }
 
-#features {
+#features,
+#hardware {
   padding-left: 100px;
   padding-right: 100px;
 }
 
-.carousel {
+.carousel,
+.hardware_image,
+.video-block {
   padding-left: 45px;
-  padding-right: 5px; 
+  padding-right: 5px;
 }
 
 .carousel-control-prev {
@@ -156,11 +155,6 @@ form {
 
 .carousel-control-next {
   margin-right: -70px;
-}
-
-#hardware {
-  padding-left: 150px;
-  padding-right: 115px;
 }
 
 .hardware_image {
@@ -178,7 +172,6 @@ form {
 
 #video-container,
 #video {
-  padding-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -198,89 +191,104 @@ form {
             FORM STYLES
    =================================== */
 
-   #form {
-    margin: 0 -1em;
-    border-top: 0.5px solid #ddd;
-    padding: 2em;
-  }
-  
-  input {
-    background-color: transparent;
-    color: inherit;
-    border: none;
-    margin: 1em 0;
-    width: 50%;
-  }
-  
-  input:not([type="submit"]) {
-    padding: 1em 0;
-    border-bottom: 1px solid currentColor;
-    color: #ddd;
-    padding-left: 8px;
-    font-size: 14px;
-  }
-  
-  input[type="submit"] {
-    background-color: #fefefe;
-    color: #000;
-    padding: 1em 1.5em;
-    transition: all 0.1s ease;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #3a9bbe;
-  }
+footer {
+  padding-top: 200px;
+}
+
+#form {
+  margin: 0 -1em;
+  padding: 3em;
+}
+
+input {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  margin: 1em 0;
+  width: 50%;
+}
+
+input:not([type="submit"]) {
+  padding: 1em 0;
+  border-bottom: 1px solid currentColor;
+  color: #ddd;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #fefefe;
+  color: #000;
+  padding: 1em 1.5em;
+  transition: all 0.1s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3a9bbe;
+}
 
 /* ===================================
             MEDIA QUERIES
    =================================== */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  #features,
+  #hardware,
+  #nav-bar,
+  #header-img,
+  #video,
+  footer,
+  ul {
+    padding: 0;
+  }
+
   #header,
   input {
     display: block;
   }
 
-  #header-img,
-  #nav-bar,
-  ul,
-  .hero,
-  #image,
-  #form {
+  main,
+  #nav-bar ul {
     margin: 0 auto;
-  }
-
-  #header-img,
-  #nav-bar,
-  ul,
-  .hero,
-  #image {
-    padding: 0;
   }
 
   .cover,
   .carousel {
     margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .carousel {
-    padding-top: 10px;
+  .carousel-control-next {
+    margin-right: -1.8em;
+  }
+
+  .hardware_image,
+  div.video-block {
+    padding-left: 10px;
   }
 
   .hardware_image {
     padding-top: 14.4px;
+    padding-bottom: 35px;
+  }
+
+  .nav-link {
+    font-size: 10px;
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     font-size: 14px;
   }
 
-  .list_style {
+  .centerTitle {
     font-size: 12px;
   }
 
-  li,
+  input:not([type="submit"]),
+  .nav-link,
   input {
     font-size: 10px;
   }
