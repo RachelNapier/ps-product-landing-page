@@ -120,6 +120,10 @@ h3 {
   padding-top: 3em;
 }
 
+.content {
+  text-align: left;
+}
+
 .carousel {
   margin-bottom: 10px;
   margin-top: -10px;
@@ -253,10 +257,21 @@ input[type="submit"]:hover {
   }
 
   .cover,
-  .carousel {
+  .carousel,
+  .hardware_image,
+  div.video-block,
+  #image {
     margin-left: 0;
-    padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .cover,
+  .carousel,
+  .hardware_image,
+  .content,
+  div.video-block,
+  #image {
+    padding-left: 10px;
   }
 
   .carousel-control-next {
@@ -265,25 +280,24 @@ input[type="submit"]:hover {
 
   .hardware_image,
   div.video-block {
-    padding-left: 10px;
+    padding-bottom: 42px;
   }
 
   .hardware_image {
-    padding-top: 14.4px;
-    padding-bottom: 35px;
-  }
-
-  .nav-link {
-    font-size: 10px;
+    padding-top: 42px;
   }
 
   h1,
   h2,
   h3 {
-    font-size: 14px;
+    font-size: 1em;
   }
 
   .centerTitle {
+    font-size: 14px;
+  }
+
+  .content {
     font-size: 12px;
   }
 
@@ -295,6 +309,7 @@ input[type="submit"]:hover {
 
   #form {
     margin: 0 auto;
+    padding-top: 0;
   }
 
   input {
