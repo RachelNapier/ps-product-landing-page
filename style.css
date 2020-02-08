@@ -104,7 +104,8 @@ form {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   text-transform: uppercase;
   opacity: 0.8;
   color: #ddd;
@@ -112,6 +113,7 @@ h4 {
 
 #main,
 h4,
+h5,
 form {
   text-align: center;
 }
@@ -124,6 +126,7 @@ footer {
 
 .intro {
   font-size: 1.2em;
+  font-style: italic;
 }
 
 h4 {
@@ -299,12 +302,42 @@ input[type="submit"]:hover {
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     font-size: 1em;
   }
 
-  .centerTitle {
+  .centerTitle,
+  .intro,
+  h5 {
     font-size: 14px;
+  }
+
+  .intro,
+  h1 {
+    padding-left: 20.8px;
+  }
+
+  h2,
+  h3 {
+    padding-top: 4em;
+  }
+
+  .centerTitle {
+    margin-bottom: -12px;
+  }
+
+  .hardware_image {
+    padding-bottom: 0;
+  }
+
+  div.video-block,
+  .centerTitle {
+    padding-top: 42px;
+  }
+
+  div.video-block {
+    padding-bottom: 42px;
   }
 
   .content,
