@@ -12,8 +12,8 @@ li {
 }
 
 #header,
-h1,
-h2 {
+h2,
+h3 {
   border-bottom: 0.5px solid #ddd;
 }
 
@@ -26,16 +26,6 @@ h2 {
 
 p {
   color: #fefefe;
-  padding-top: 1em;
-}
-
-.nav-link,
-h1,
-h2,
-h3 {
-  text-transform: uppercase;
-  opacity: 0.8;
-  color: #ddd;
 }
 
 /* ===================================
@@ -98,22 +88,51 @@ form {
             CONTENT & IMAGES
    =================================== */
 
-#main,
-.centerTitle,
+.cover,
+.hero,
+.carousel,
+.hardware_image,
+#image,
+#video,
+form {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link,
+.intro,
+h1,
+h2,
 h3,
+h4 {
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: #ddd;
+}
+
+#main,
+h4,
 form {
   text-align: center;
 }
 
-h1,
 h2,
+h3,
 footer {
   padding-top: 160px;
 }
 
-h3 {
+.intro {
+  font-size: 1.2em;
+}
+
+h4 {
   border-top: 0.5px solid #ddd;
   padding-top: 1em;
+}
+
+.hero {
+  padding-bottom: 20px;
 }
 
 .centerTitle {
@@ -126,19 +145,19 @@ h3 {
   margin-top: -10px;
 }
 
-.cover,
-.hero,
-.carousel,
-.hardware_image,
-#image,
-#video,
-form {
-  width: 100%;
-  height: 100%;
+.content,
+.intro {
+  padding-top: 12px;
 }
 
 .content {
   text-align: left;
+}
+
+.blue_text,
+.centerTitle,
+h1 {
+  color: #3a9bbe;
 }
 
 .carousel,
@@ -149,7 +168,7 @@ form {
 }
 
 .carousel-control-prev {
-  margin-left: -28px;
+  margin-left: -26px;
 }
 
 .carousel-control-next {
@@ -279,7 +298,8 @@ input[type="submit"]:hover {
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-size: 1em;
   }
 
@@ -287,7 +307,8 @@ input[type="submit"]:hover {
     font-size: 14px;
   }
 
-  .content {
+  .content,
+  .description {
     font-size: 12px;
   }
 
