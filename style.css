@@ -18,7 +18,7 @@ h3 {
 }
 
 #main {
-  max-width: 1024px;
+  max-width: 1224px;
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -42,7 +42,7 @@ p {
   flex-wrap: wrap;
   z-index: 101;
   justify-content: space-between;
-  margin: 0 -16px 36px;
+  margin-bottom: 0 0 -16px 36px;
 }
 
 #header-img {
@@ -84,6 +84,10 @@ form {
 /* ===================================
             CONTENT & IMAGES
    =================================== */
+   
+ul {
+  padding-left: 0;
+}
 
 .cover,
 .hero,
@@ -246,10 +250,13 @@ input[type="submit"]:hover {
    =================================== */
 
 @media (min-width: 320px) and (max-width: 767px) {
+  #main {
+    padding: 0 20px;
+  }
+
   #nav-bar,
   #header-img,
-  #video,
-  #main,
+  .carousel,
   footer,
   ul {
     padding: 0;
@@ -266,34 +273,12 @@ input[type="submit"]:hover {
     margin: 0 auto;
   }
 
-  .cover,
-  .hero,
-  .carousel,
-  .hardware_image,
-  .content,
-  div.video-block,
-  #image {
-    margin-left: 0;
-    padding-left: 20.8px;
-  }
-
   .carousel-control-next {
-    margin-right: -45px;
+    margin-right: -30px;
   }
 
   .carousel-control-prev {
     margin-left: -30px;
-  }
-
-  .hardware_image,
-  div.video-block {
-    padding-bottom: 42px;
-  }
-
-
-  .intro,
-  h1 {
-    padding-left: 20.8px;
   }
 
   h2,
@@ -303,15 +288,14 @@ input[type="submit"]:hover {
 
   .centerTitle {
     margin-bottom: -12px;
-  }
-
-  div.video-block,
-  .centerTitle,
-  .hardware_image {
     padding-top: 42px;
   }
 
-  
+  div.video-block,
+  .hardware_image {
+    padding: 42px 0;
+  }
+
   #form {
     padding-top: 0;
   }
