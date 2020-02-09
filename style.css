@@ -20,8 +20,7 @@ h3 {
 #main {
   max-width: 1024px;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0 100px;
 }
 
 p {
@@ -33,7 +32,7 @@ p {
    =================================== */
 
 #header {
-  padding: 0 1em;
+  padding: 0 16px;
   position: sticky;
   top: 0;
   left: 0;
@@ -43,9 +42,7 @@ p {
   flex-wrap: wrap;
   z-index: 101;
   justify-content: space-between;
-  margin-left: -1em;
-  margin-right: -1em;
-  margin-bottom: 2em;
+  margin: 0 -16px 36px;
 }
 
 #header-img {
@@ -125,13 +122,13 @@ footer {
 }
 
 .intro {
-  font-size: 1.2em;
+  font-size: 18px;
   font-style: italic;
 }
 
 h4 {
   border-top: 0.5px solid #ddd;
-  padding-top: 1em;
+  padding-top: 16px;
 }
 
 .hero {
@@ -140,12 +137,11 @@ h4 {
 
 .centerTitle {
   display: block;
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 .carousel {
-  margin-bottom: 10px;
-  margin-top: -10px;
+  margin: -10 0 10px;
 }
 
 .content,
@@ -166,8 +162,7 @@ h1 {
 .carousel,
 .hardware_image,
 .video-block {
-  padding-left: 45px;
-  padding-right: 5px;
+  padding: 0 5px 0 45px;
 }
 
 .carousel-control-prev {
@@ -214,22 +209,22 @@ div.video-block {
    =================================== */
 
 #form {
-  margin: 0 -1em;
-  padding: 3em;
+  margin: 0 -16px;
+  padding: 48px;
 }
 
 input {
   background-color: transparent;
   color: inherit;
   border: none;
-  margin: 1em 0;
+  margin: 16px 0;
   width: 50%;
   font-size: 12px;
 }
 
 input:not([type="submit"]) {
-  padding: 1em 0;
-  border-bottom: 1px solid currentColor;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
   color: #ddd;
   padding-left: 8px;
 }
@@ -237,7 +232,7 @@ input:not([type="submit"]) {
 input[type="submit"] {
   background-color: #fefefe;
   color: #000;
-  padding: 1em 1.5em;
+  padding: 16px 24px;
   transition: all 0.1s ease;
 }
 
@@ -279,7 +274,7 @@ input[type="submit"]:hover {
   div.video-block,
   #image {
     margin-left: 0;
-    padding-left: 1.3em;
+    padding-left: 20.8px;
   }
 
   .carousel-control-next {
@@ -295,23 +290,6 @@ input[type="submit"]:hover {
     padding-bottom: 42px;
   }
 
-  .hardware_image {
-    padding-top: 42px;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 1em;
-  }
-
-  .centerTitle,
-  .intro,
-  h5 {
-    font-size: 14px;
-  }
 
   .intro,
   h1 {
@@ -320,33 +298,41 @@ input[type="submit"]:hover {
 
   h2,
   h3 {
-    padding-top: 4em;
+    padding-top: 64px;
   }
 
   .centerTitle {
     margin-bottom: -12px;
   }
 
-  .hardware_image {
-    padding-bottom: 0;
-  }
-
   div.video-block,
-  .centerTitle {
+  .centerTitle,
+  .hardware_image {
     padding-top: 42px;
   }
 
-  div.video-block {
-    padding-bottom: 42px;
+  
+  #form {
+    padding-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 16px;
+  }
+
+  .centerTitle,
+  .intro,
+  h5 {
+    font-size: 14px;
   }
 
   .content,
   .description {
     font-size: 12px;
-  }
-
-  #form {
-    padding-top: 0;
   }
 
   input {
